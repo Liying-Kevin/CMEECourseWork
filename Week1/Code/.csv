@@ -1,0 +1,5 @@
+
+echo -e "test \t\t test" >> ../SandBox/test.txt
+bash tabtocsv.sh ../SandBox/test.txt
+f 
+done
