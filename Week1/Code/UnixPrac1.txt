@@ -5,3 +5,9 @@ star:Data kevin$ wc -l E.coli.fasta
 star:Data kevin$ tail -n +2 E.coli.fasta
 star:Data kevin$ tail -n +2 E.coli.fasta | wc -m  
 star:Data kevin$ tail -n +2 E.coli.fasta | grep -o ATGC
+star:Data kevin$ v1=$(tail -n +2 E.coli.fasta | grep -o AT | wc -m)
+star:Data kevin$ echo $v1
+star:Data kevin$ v2=$(tail -n +2 E.coli.fasta | grep -o GC | wc -m)
+star:Data kevin$ echo $v2
+star:Data kevin$ val=`echo "scale=3; $v1/$v2" | bc`
+star:Data kevin$ echo $val
