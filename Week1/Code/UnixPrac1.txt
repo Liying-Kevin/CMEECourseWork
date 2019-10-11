@@ -1,0 +1,7 @@
+star:Data kevin$ wget https://github.com/mhasoba/TheMulQuaBio/blob/master/data/fasta/407228326.fasta
+star:Data kevin$ wc -l 407228326.fasta
+star:Data kevin$ wc -l 407228412.fasta
+star:Data kevin$ wc -l E.coli.fasta
+star:Data kevin$ tail -n +2 E.coli.fasta
+star:Data kevin$ tail -n +2 E.coli.fasta | wc -m  
+star:Data kevin$ tail -n +2 E.coli.fasta | grep -o ATGC

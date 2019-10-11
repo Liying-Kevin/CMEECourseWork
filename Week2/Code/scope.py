@@ -18,7 +18,7 @@ print("Outside the function, the value is ", _a_global)
 
 _a_global = 10
 
-def a_function():
+def a_function2():
     global _a_global
     _a_global = 5
     _a_local = 4
@@ -26,5 +26,5 @@ def a_function():
     print("Inside the function, the value is ", _a_local)
     return None
 
-a_function()
+a_function2()
 print("Outside the function, the value is", _a_global)
