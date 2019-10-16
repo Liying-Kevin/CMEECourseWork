@@ -1,4 +1,4 @@
 This is the first week coursework
-finish practice 
+finished practice 
 Add new sh file 
-learned unix, shell scripting and git 
+learned unix, shell scripting and git latex
