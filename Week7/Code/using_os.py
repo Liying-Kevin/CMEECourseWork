@@ -24,20 +24,21 @@ home
 FilesDirsStartingWithC = []
 DirsStartingWithC = []
 # Use a for loop to walk through the home directory.
-for (dir, subdir, files) in subprocess.os.walk(home):
 #################################
 # Get files and directories in your home/ that start with either an 
 # upper or lower case 'C'
 # Type your code here:
+for (dir, subdir, files) in subprocess.os.walk(home):
     for i in files:
-        if i.startswith('C') || i.startswith('c'):
-            FilesDirsStartingWithC.append)(i)
+        if i.startswith('C') or i.startswith('c'):
+            FilesDirsStartingWithC.append(i)
     
     for i in dir:
-        if i.startswith('C') || i.startswith('c'):
-            FilesDirsStartingWithC.append)(i)
+        if i.startswith('C') or i.startswith('c'):
+            FilesDirsStartingWithC.append(i)
 
 print("finish")
+
 #################################
 # Get only directories in your home/ that start with either an upper or 
 #~lower case 'C' 
@@ -45,7 +46,7 @@ print("finish")
 # Type your code here:
 for (dir, subdir, files) in subprocess.os.walk(home):
     for i in dir:
-        if i.startswith('C') || i.startswith('c'):
-            DirsStartingWithC.append)(i)
+        if i.startswith('C') or i.startswith('c'):
+            DirsStartingWithC.append(i)
 
 print("finish")
