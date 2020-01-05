@@ -3,8 +3,8 @@
 rm(list=ls()) 
 graphics.off()
 source("jrosinde_HPC_2019_main.R")
-#iter <- as.numeric(Sys.getenv("PBS_ARRAY_INDEX"))
-#set.seed(iter)
+iter <- as.numeric(Sys.getenv("PBS_ARRAY_INDEX"))
+set.seed(iter)
 #for (i in 1:100) {
   
  # iter <- sample(100,1,replace = FALSE)
