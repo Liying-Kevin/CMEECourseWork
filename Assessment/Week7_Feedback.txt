@@ -13,7 +13,7 @@ Your Git repo size this week is about 1.51 MiB on disk
 
 PART 1: Checking project workflow...
 
-Found the following directories in parent directory: Week6, Week1, Week7, Assessment, Week2, .git, Week3
+Found the following directories in parent directory: Week6, Week1, Week7, Assessment, Week2, Week9, .git, Week3
 
 Found the following files in parent directory: README.txt, .gitignore, .DS_Store
 
@@ -37,7 +37,7 @@ My CMEE Coursework Repository
 ======================================================================
 Looking for the weekly directories...
 
-Found 5 weekly directories: Week1, Week2, Week3, Week6, Week7
+Found 6 weekly directories: Week1, Week2, Week3, Week6, Week7, Week9
 
 The Week7 directory will be assessed 
 
@@ -50,13 +50,16 @@ Assessing WEEK7...
 
 Found the following directories: Code, Result, Data
 
-Found the following files: .DS_Store
+Found the following files: README.txt, .DS_Store
 
 Checking for readme file in weekly directory...
 
-README file missing, 1 pt deducted
+Found README in parent directory, named: README.txt
 
-Current Points = 99
+Printing contents of README.txt:
+**********************************************************************
+this week learnd python and network
+finish all work and store the result in the result directory.**********************************************************************
 
 Found following files in results directory: outputFile.Rout, TestR.Rout, fmr_plot.pdf, LV_model.pdf, LV2_model.pdf, LV1.pdf, fmrR_errFile.Rout, fmrR.Rout, network.pdf, LV2.pdf, TestR_errFile.Rout, errorFile.Rout, QMEENet.svg...
 ideally, Results directory should be empty other than, perhaps, a readme. 
@@ -83,7 +86,7 @@ checking for docstrings...
 No functions, but no script-level docstring either
 2 pts deducted
 
-Current Points = 97
+Current Points = 98
 
 Output (only first 500 characters): 
 
@@ -93,7 +96,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.17540s
+Time consumed = 0.12449s
 
 ======================================================================
 Inspecting script file regexs.py...
@@ -159,7 +162,7 @@ checking for docstrings...
 No functions, but no script-level docstring either
 2 pts deducted
 
-Current Points = 95
+Current Points = 96
 
 Output (only first 500 characters): 
 
@@ -179,7 +182,7 @@ y.a_academic@imperial.ac.uk
 
 Code ran without errors
 
-Time consumed = 0.03031s
+Time consumed = 0.02915s
 
 ======================================================================
 Inspecting script file Untitled1.ipynb...
@@ -2113,7 +2116,7 @@ checking for docstrings...
 Found one or more functions, but completely missing docstrings
 2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
 
-Current Points = 91.5
+Current Points = 92.5
 
 Output (only first 500 characters): 
 
@@ -2124,7 +2127,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 3.64094s
+Time consumed = 3.60753s
 
 ======================================================================
 Inspecting script file timeitme.py...
@@ -2168,17 +2171,19 @@ checking for docstrings...
 No functions, but no script-level docstring either
 2 pts deducted
 
-Current Points = 89.5
+Current Points = 90.5
 
 Output (only first 500 characters): 
 
 **********************************************************************
+10000000 My string
+10000000 My string
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 10.00898s
+Time consumed = 9.94734s
 
 ======================================================================
 Inspecting script file blackbirds.py...
@@ -2223,7 +2228,7 @@ checking for docstrings...
 No functions, but no script-level docstring either
 2 pts deducted
 
-Current Points = 87.5
+Current Points = 88.5
 
 Output (only first 500 characters): 
 
@@ -2290,7 +2295,7 @@ checking for docstrings...
 No functions, but no script-level docstring either
 2 pts deducted
 
-Current Points = 85.5
+Current Points = 86.5
 
 Output (only first 500 characters): 
 
@@ -2320,7 +2325,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.63688s
+Time consumed = 0.64654s
 
 ======================================================================
 Inspecting script file TestR.R...
@@ -2340,7 +2345,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.10256s
+Time consumed = 0.10219s
 
 ======================================================================
 Inspecting script file profileme.py...
@@ -2376,7 +2381,7 @@ checking for docstrings...
 Found one or more functions, but completely missing docstrings
 2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
 
-Current Points = 82.0
+Current Points = 83.0
 
 Output (only first 500 characters): 
 
@@ -2387,7 +2392,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 6.44569s
+Time consumed = 6.43025s
 
 ======================================================================
 Inspecting script file fmr.R...
@@ -2430,7 +2435,7 @@ Finished in R!
 
 Code ran without errors
 
-Time consumed = 0.17083s
+Time consumed = 0.17199s
 
 ======================================================================
 Inspecting script file MyFirstJupyterNb.ipynb...
@@ -2508,7 +2513,7 @@ checking for docstrings...
 
 Found no functions, but one docstring for the script, good
 
-Current Points = 82.0
+Current Points = 83.0
 
 Output (only first 500 characters): 
 
@@ -2520,7 +2525,7 @@ finish
 
 Code ran without errors
 
-Time consumed = 6.55534s
+Time consumed = 6.66129s
 
 ======================================================================
 Inspecting script file LV1.py...
@@ -2577,7 +2582,7 @@ checking for docstrings...
 Found one or more functions, but completely missing docstrings
 2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
 
-Current Points = 79.5
+Current Points = 80.5
 
 Output (only first 500 characters): 
 
@@ -2587,7 +2592,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 10.00744s
+Time consumed = 10.00937s
 
 ======================================================================
 Inspecting script file Untitled3.ipynb...
@@ -2834,7 +2839,7 @@ checking for docstrings...
 Found one or more functions, but completely missing docstrings
 2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
 
-Current Points = 77.0
+Current Points = 78.0
 
 Output (only first 500 characters): 
 
@@ -2968,7 +2973,7 @@ checking for docstrings...
 No functions, but no script-level docstring either
 2 pts deducted
 
-Current Points = 75.0
+Current Points = 76.0
 
 Output (only first 500 characters): 
 
@@ -2978,7 +2983,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.20485s
+Time consumed = 0.20446s
 
 ======================================================================
 Inspecting script file LV2.py...
@@ -3049,7 +3054,7 @@ checking for docstrings...
 Found one or more functions, but completely missing docstrings
 2 pts deducted for missing docstring for script, and .5 pt deducted per missing docstring for function
 
-Current Points = 72.5
+Current Points = 73.5
 
 Output (only first 500 characters): 
 
@@ -3059,7 +3064,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 10.01257s
+Time consumed = 10.01216s
 
 ======================================================================
 Inspecting script file Untitled3-checkpoint.ipynb...
@@ -3132,6 +3137,6 @@ Ran into 3 errors
 
 FINISHED WEEKLY ASSESSMENT
 
-Current Points for the Week = 72.5
+Current Points for the Week = 73.5
 
 NOTE THAT THESE ARE POINTS, NOT MARKS FOR THE WEEK!
