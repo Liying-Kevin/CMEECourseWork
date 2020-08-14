@@ -1,0 +1,30 @@
+
+# 1) DIRECTORIES
+
+# path to msms.jar (java should be in /usr/bin)
+DIRMSMS="/Users/kevin/CMEECourseWork/msms/lib/msms.jar" 
+
+# directory of where you will store the simulated data
+DIRDATA="/Users/kevin/CMEECourseWork/final_project/data/simulation" 
+
+# 2) DEMOGRAPHIC MODEL
+
+NREF=100000 # reference effective population size
+DEMO='' # constant size
+
+# 3) LOCUS AND SAMPLE SIZE
+
+LEN=100000 # length of the locus in bp
+THETA=40 # mutation rate in 4*Ne*LEN scale; 40 corresponds to 4e-9 for Ne=100,000 and 100,000 bp length
+NCHROMS=100 # number of chromosomal copies to simulate (e.g. twice the number of individuals for a diploid species)
+
+# if you are performing a binary or multiclass classification, you need to define the interval a step, like:
+RHORANGE=`seq 20 20 60` # range and step for the recombination rate
+NREPL=100 # this is the number of replicates (simulations) per value of recombination rate to be estimated;
+
+# number of batches for each simulation
+NBATCH=20
+
+# nr thread of msms
+NTHREADS=4
+

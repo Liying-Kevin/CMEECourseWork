@@ -1,0 +1,8 @@
+
+VCFtools - 0.1.17
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf ag10000.vcf
+
+Error: Can't determine file type of ag10000.vcf
