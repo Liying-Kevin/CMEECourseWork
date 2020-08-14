@@ -1,0 +1,292 @@
+Starting weekly assessment for Liying, Week6
+
+Current Points = 100
+
+Note that: 
+(1) Major sections begin with a double "====" line 
+(2) Subsections begin with a single "====" line 
+(3) Code output or text file content are printed within single "*****" lines 
+
+======================================================================
+======================================================================
+Your Git repo size this week is about 1.51 MiB on disk 
+
+PART 1: Checking project workflow...
+
+Found the following directories in parent directory: Week6, Week1, Week7, Assessment, Week2, Week9, .git, Week3
+
+Found the following files in parent directory: README.txt, .gitignore, .DS_Store
+
+Checking for key files in parent directory...
+
+Found .gitignore in parent directory, great! 
+
+Printing contents of .gitignore:
+**********************************************************************
+*~ 
+*.tmp
+**********************************************************************
+
+Found README in parent directory, named: README.txt
+
+Printing contents of README.txt:
+**********************************************************************
+My CMEE Coursework Repository
+**********************************************************************
+
+======================================================================
+Looking for the weekly directories...
+
+Found 6 weekly directories: Week1, Week2, Week3, Week6, Week7, Week9
+
+The Week6 directory will be assessed 
+
+======================================================================
+======================================================================
+PART 2: Checking weekly code and workflow...
+
+======================================================================
+Assessing WEEK6...
+
+Found the following directories: code, data
+
+Found the following files: .DS_Store
+
+Checking for readme file in weekly directory...
+
+README file missing, 1 pt deducted
+
+Current Points = 99
+
+Results directory missing!
+
+Creating Results directory...
+
+Found 3 code files: genetic drift.R, coalescence theory.R, population subdivision.R
+
+Found the following extra files: .RData, .Rhistory
+0.5 pt deducted per extra file
+
+Current Points = 98.0
+
+======================================================================
+Testing script/code files...
+
+======================================================================
+Inspecting script file genetic drift.R...
+
+File contents are:
+**********************************************************************
+data1 <- read.csv("../data/western_banded_gecko.csv", header=F, colClasses = rep('character', 20000), stringsAsFactors = F)
+data2 <- read.csv("../data/bent-toed_gecko.csv", header=F, colClasses = rep('character', 20000), stringsAsFactors = F)
+data3 <- read.csv("../data/leopard_gecko.csv", header=F, colClasses = rep('character', 20000), stringsAsFactors = F)
+
+
+######calculate data1 & data2
+j = 0
+k = 0
+for (i in 1:ncol(data1)){
+  if(length(unique(data1[,i])) == 1 & length(unique(data2[,i])) == 1){
+      j <- j+1
+      if((data1[1,i]) != (data2[1,i])){
+        k <- k+1
+      }
+  }
+  
+}
+result1 <- k / j
+
+######calculate data1 & data3
+j = 0
+k = 0
+for (i in 1:ncol(data1)){
+  if(length(unique(data1[,i])) == 1 & length(unique(data3[,i])) == 1){
+    j <- j+1
+    if((data1[1,i]) != (data3[1,i])){
+      k <- k+1
+    }
+  }
+  
+}
+result2 <- k / j
+
+######calculate data2 & data3
+j = 0
+k = 0
+for (i in 1:ncol(data2)){
+  if(length(unique(data2[,i])) == 1 & length(unique(data3[,i])) == 1){
+    j <- j+1
+    if((data2[1,i]) != (data3[1,i])){
+      k <- k+1
+    }
+  }
+  
+}
+result3 <- k / j
+
+print(result1)
+print(result2)
+print(result3)
+
+
+
+
+**********************************************************************
+
+Testing genetic drift.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+Fatal error: cannot open file 'genetic': No such file or directory
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.01490s
+
+======================================================================
+Inspecting script file coalescence theory.R...
+
+File contents are:
+**********************************************************************
+north <- read.csv("../data/killer_whale_North.csv", header=F)
+south <- read.csv("../data/killer_whale_South.csv", header=F)
+
+vector1 <- c()
+for (i in 1:ncol(north)){
+  if(length(unique(north[,i])) == 2){
+    #print(i)
+    vector1 <- c(vector1,i)
+  }
+}
+
+northChange<-north[vector1]
+
+sumDiffer <-c()
+for (i in 1:nrow(northChange)){
+  for (j in 1:nrow(northChange)){
+    differ <- (northChange[i,] - northChange[j,])
+    differ <- sum(abs(differ))
+    sumDiffer <- c(sumDiffer,differ)
+    sumDiffers <- sum(sumDiffer)
+  }
+}
+tajima <- (sumDiffers / nrow(northChange)/ (nrow(northChange)-1))
+Ne <- (tajima / (4 * 10^{-8}))
+S <- ncol(northChange)/sum(1/seq(1,19))
+
+
+
+vector2 <- c()
+for (i in 1:ncol(south)){
+  if(length(unique(south[,i])) == 2){
+    #print(i)
+    vector2 <- c(vector2,i)
+  }
+}
+southChange<-south[vector2]
+
+sumDiffer1 <-c()
+for (i in 1:nrow(southChange)){
+  for (j in 1:nrow(southChange)){
+    differ1 <- (southChange[i,] - southChange[j,])
+    differ1 <- sum(abs(differ1))
+    sumDiffer1 <- c(sumDiffer1,differ1)
+    sumDiffers1 <- sum(sumDiffer1)
+  }
+}
+tajima1 <- (sumDiffers1 / nrow(southChange)/ (nrow(southChange)-1))
+Ne1 <- (tajima1 / (4 * 10^{-8}))
+S1 <- ncol(southChange)/sum(1/seq(1,19))
+
+abcd <- colSums(northChange)
+erty <- table(abcd)
+plot(erty)
+**********************************************************************
+
+Testing coalescence theory.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+Fatal error: cannot open file 'coalescence': No such file or directory
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.01512s
+
+======================================================================
+Inspecting script file population subdivision.R...
+
+File contents are:
+**********************************************************************
+turtle <- read.csv("../data/turtle.csv", header=F, colClasses = rep('numeric', 2000), stringsAsFactors = F)
+turtleGenotypes <- read.csv("../data/turtle.genotypes.csv", header=F, colClasses = rep('numeric', 2000), stringsAsFactors = F)
+
+############A
+
+turtle <- as.matrix(turtle)
+distance<- dist(turtle)
+tree <- hclust(distance)
+plot(tree)
+############C
+
+turtleGenotypesA<-turtleGenotypes[1:10,]
+turtleGenotypesB<-turtleGenotypes[11:20,]
+turtleGenotypesC<-turtleGenotypes[21:30,]
+turtleGenotypesD<-turtleGenotypes[31:40,]
+#location A & B
+compareLocation <- function(location1,location2){
+  fA1 <- as.matrix((apply(location1, 2, sum))/nrow(location1))
+  fA2 <- as.matrix((apply(location2, 2, sum))/nrow(location2))
+  FST <- rep(NA, length(fA1))
+    for(i in 1 : length(FST)){
+      HS <- (fA1[i]*(1-fA1[i])+fA2[i]*(1-fA2[i]))/2
+      HT <- 2 * ( (fA1[i] + fA2[i]) / 2 ) * (1 - ((fA1[i] + fA2[i]) / 2) )
+      FST[i] <- (HT - HS)/ HT
+    }
+  return(FST)
+}
+
+A_B <- compareLocation(turtleGenotypesA,turtleGenotypesB)
+A_C <- compareLocation(turtleGenotypesA,turtleGenotypesC)
+A_D <- compareLocation(turtleGenotypesA,turtleGenotypesD)
+B_C <- compareLocation(turtleGenotypesB,turtleGenotypesC)
+B_D <- compareLocation(turtleGenotypesB,turtleGenotypesD)
+C_D <- compareLocation(turtleGenotypesC,turtleGenotypesD)
+
+C_D1 <- mean(C_D, na.rm=T)
+
+**********************************************************************
+
+Testing population subdivision.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+Fatal error: cannot open file 'population': No such file or directory
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.01603s
+
+======================================================================
+======================================================================
+Finished running scripts
+
+Ran into 0 errors
+
+======================================================================
+======================================================================
+
+FINISHED WEEKLY ASSESSMENT
+
+Current Points for the Week = 98.0
+
+NOTE THAT THESE ARE POINTS, NOT MARKS FOR THE WEEK!

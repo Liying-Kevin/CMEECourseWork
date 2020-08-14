@@ -13,7 +13,7 @@ Your Git repo size this week is about 1.51 MiB on disk
 
 PART 1: Checking project workflow...
 
-Found the following directories in parent directory: Week1, Assessment, Week2, .git
+Found the following directories in parent directory: Week6, Week1, Week7, Assessment, Week2, Week9, .git, Week3
 
 Found the following files in parent directory: README.txt, .gitignore, .DS_Store
 
@@ -37,7 +37,7 @@ My CMEE Coursework Repository
 ======================================================================
 Looking for the weekly directories...
 
-Found 2 weekly directories: Week1, Week2
+Found 6 weekly directories: Week1, Week2, Week3, Week6, Week7, Week9
 
 The Week1 directory will be assessed 
 
@@ -59,15 +59,32 @@ Found README in parent directory, named: README.txt
 Printing contents of README.txt:
 **********************************************************************
 This is the first week coursework
-finish practice 
+finished practice 
 Add new sh file 
-learned unix, shell scripting and git **********************************************************************
+learned unix, shell scripting and git latex
+In this week, I can init git, and connect to remote github. I can update my new file to github by terminal.
+create new directory week1 to store file.
+directory code be used to store code 
+directory data be used to store some data which need to be used
+directory sandbox be used to store the result of the code.
+boilerplate.sh: is a shell script, run it will print a This is a shell script! in the terminal line.
+tabtocsv.sh: is a shell script, run it will create a new file (txt) in the result directory
+variables.sh,MyExampleScript.sh: is a shell script, run it can change the variables to real value.
+CountLines.sh:: is a shell script, run it can count lines in a file and print result in the terminal line.
+ConcatenateTwoFiles.sh: is a shell script, run it can concatenate the contents of two files
+tiff2png.sh: is a shell script, run it can convert tiff to png
+csvtospace.sh: is a shell script, run it can make the ',' change to space and create new file(csv) to store the new result
+FirstExample.tex: is a latex file, run it can create new latex.
+FirstBiblio.bib: is a bib file, run it can add reference to pdf.
+CompileLaTeX.sh: is a shell script, run it can compile latex with bibtex.
+
+**********************************************************************
 
 Found following files in results directory: ...
 
 Found 12 code files: ConcatenateTwoFiles.sh, CompileLaTex.sh, CountLines.sh, variables.sh, tiff2png.sh, csvtospace.sh, FirstExample.tex, MyExampleScript.sh, FirstBiblio.bib, UnixPrac1.txt, tabtocsv.sh, boilerplate.sh
 
-Found the following extra files: FirstExample.bbl, FirstExample.blg, FirstExample.pdf, .xls, .DS_Store
+Found the following extra files: .DS_Store, .xls, FirstExample.blg, FirstExample.bbl, FirstExample.pdf
 0.5 pt deducted per extra file
 
 Current Points = 97.5
@@ -156,29 +173,29 @@ rm: cannot remove '*.out': No such file or directory
 rm: cannot remove '*.snm': No such file or directory
 rm: cannot remove '*.toc': No such file or directory
 
-** (evince:9973): WARNING **: Error when getting information for file '/home/mhasoba/Documents/Teaching/IC_CMEE/2019-20/Coursework/StudentRepos/LiyingHuang_LH1019/Week1/Code/.pdf': No such file or directory
+** (evince:12146): WARNING **: Error when getting information for file '/home/mhasoba/Documents/Teaching/IC_CMEE/2019-20/Coursework/StudentRepos/LiyingHuang_LH1019/Week1/Code/.pdf': No such file or directory
 
-** (evince:9973): WARNING **: Error setting file metadata: No such file or directory
+** (evince:12146): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:9973): WARNING **: Error setting file metadata: No such file or directory
+** (evince:12146): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:9973): WARNING **: Error setting file metadata: No such file or directory
+** (evince:12146): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:9973): WARNING **: Error setting file metadata: No such file or directory
+** (evince:12146): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:9973): WARNING **: Error setting file metadata: No such file or directory
+** (evince:12146): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:9973): WARNING **: Error setting file metadata: No such file or directory
+** (evince:12146): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:9973): WARNING **: Error setting file metadata: No such file or directory
+** (evince:12146): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:9973): WARNING **: Error setting file metadata: No such file or directory
+** (evince:12146): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:9973): WARNING **: Error setting file metadata: No such file or directory
+** (evince:12146): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:9973): WARNING **: Error setting file metadata: No such file or directory
+** (evince:12146): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:9973): WARNING **: Error setting file metadata: No such file or directory
+** (evince:12146): WARNING **: Error setting file metadata: No such file or directory
 
 ======================================================================
 Inspecting script file CountLines.sh...
@@ -303,7 +320,7 @@ Done!
 
 Code ran without errors
 
-Time consumed = 0.00443s
+Time consumed = 0.00543s
 
 ======================================================================
 Inspecting script file FirstExample.tex...
@@ -365,7 +382,7 @@ Hello mhasoba
 
 Code ran without errors
 
-Time consumed = 0.00638s
+Time consumed = 0.00818s
 
 ======================================================================
 Inspecting script file FirstBiblio.bib...
@@ -437,7 +454,7 @@ Done!
 
 Code ran without errors
 
-Time consumed = 0.00688s
+Time consumed = 0.00972s
 
 ======================================================================
 Inspecting script file boilerplate.sh...
@@ -468,7 +485,7 @@ Remove excess spaces.
 
 Code ran without errors
 
-Time consumed = 0.00507s
+Time consumed = 0.00435s
 
 ======================================================================
 ======================================================================
